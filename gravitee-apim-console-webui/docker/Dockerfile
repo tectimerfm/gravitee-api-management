@@ -20,8 +20,6 @@ LABEL maintainer="contact@graviteesource.com"
 ENV CONSOLE_BASE_HREF "/"
 ENV MGMT_API_URL "http://localhost:8083/management"
 
-COPY ./dist /usr/share/nginx/html/
-
 ADD docker/config/constants.json /usr/share/nginx/html/constants.json
 ADD docker/config/default.conf /etc/nginx/conf.d/default.conf
 
